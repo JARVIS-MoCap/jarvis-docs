@@ -55,6 +55,9 @@ For a quick test connect at least one or two cameras to your computer, launch th
 
 At this point you should have a recording setup that can be controlled using our AcquisitonTool and can stream video from all of your cameras. The last but very important step that is still missing is making sure all cameras record their videos perfectly in sync. To do this we use an external trigger pulse supplied by an [Arduino Uno](https://store.arduino.cc/products/arduino-uno-rev3) (or similar, our PlatformIO project supports many of the commonly used Microcontrollers).
 
+!!! warning "The current version of the AcquisitionTool still requires the old Arduino IDE based firmware"
+    You can download the firmware by clicking [here](https://github.com/JARVIS-MoCap/JARVIS-AcquisitionTool/files/9425690/Arduino_Trigger_Firmware.zip) and get the Arduino IDE by clicking [here](https://www.arduino.cc/en/software). Please disregard the next section for now (unless you are building the tool from source), we're currently in the process of switching over to the new version and will update this section as soon as possible.
+
 #### Programming the Arduino
 Programming the Arduino is really easy thanks to our PlatformIO install scripts for both Linux and Windows. Simply do the following:
 
