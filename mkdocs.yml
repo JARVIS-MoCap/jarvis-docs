@@ -13,6 +13,7 @@ nav:
     - "3. Setting up the AcquisitionTool": "manual/3_acquisitiontool_setup.md"
     - "4. Recording Calibration Videos": "manual/4_recording_calibration.md"
     - "5. Creating and Labeling Datasets": "manual/5_creating_and_labeling_datasts.md"
+    - "6. Training HybridNet": "manual/6_training_hybridnet.md"
   - "Model Database": "model_database/model_database.md"
   - "Downloads": "downloads/downloads.md"
 
