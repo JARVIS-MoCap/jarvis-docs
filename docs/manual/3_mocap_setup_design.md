@@ -1,7 +1,6 @@
 # Designing a 3D Motion Capture Setup
 
-Designing a good Camera Setup for Motion Capture is probably the most critical step to achieve reliable tracking and will safe you a lot of frustration while annotating, training your network and analyzing your data.\
-That being said, without a proper starting point the vast number of available cameras, lenses, lighting options and possible setup configurations can be quite overwhelming.
+Designing a good Camera Setup for Motion Capture is probably the most critical step to achieve reliable tracking and will safe you a lot of frustration while annotating, training your network and analyzing your data. That being said, without a proper starting point the vast number of available cameras, lenses, lighting options and possible setup configurations can be quite overwhelming.
 That's why your first step should be to answer the following questions for your planned setup.<br><br>
 The first set of questions will cover all the camera and lens specific decisions you'll have to make. Keep in mind that if you want to use our Acquisition Tool without any modifications you should use a camera model from our [list of supported cameras](/index.html#supported-cameras).  
 

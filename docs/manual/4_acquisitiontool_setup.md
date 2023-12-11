@@ -27,7 +27,7 @@ The first thing you will have to do is install the **FLIR Spinnaker SDK**. You c
 Once that is installed you can grab the [AcquisitionTool Installer](../../downloads/downloads) from the Downloads section. Under Windows just run the installer and follow the instructions. Under Linux you can install the AcquisitionTool by running `sudo apt install ./JARVIS-AcquisitionTool_1.0-1_amd64_2004.deb` (Make sure to replace the version numbers with the version you downloaded).
 If the installation completed successfully the AcquisitionTool should now be available in your Start menu under Windows. If you are running Linux you can open it by typing `AcquisitionTool` into a terminal and pressing enter.
 
-This is a good time to test out if everything is working as intended, before we move on to setting up synchronization with the external trigger.\
+This is a good time to test out if everything is working as intended, before we move on to setting up synchronization with the external trigger.<br>
 For a quick test connect at least one or two cameras to your computer, launch the AcquisitionTool and navigate to the Connection mode as shown below. You can now either connect each camera individually by clicking one of the <img class=off-glb src="../../assets/images/manual/download.png" width="18px"> slots or simply detect all cameras with the <span style="color:#63a31f">**Auto Detect Cameras**</span> button. If that works you can then switch back to the Acquisition Mode. If your cameras are in their default mode you should be able to get them streaming by clicking the <img class=off-glb src="../../assets/images/manual/start.png" width="18px">  button in the top left corner. If you now see live images of what all your cameras are seeing you are set to move on to the next and final setup step for the AcquisitionTool.
 
 ![AcquisitionTool Setup](../assets/gifs/manual/AcquisitionSetup.gif){: .center .rounded width="90%" }
@@ -54,9 +54,6 @@ For a quick test connect at least one or two cameras to your computer, launch th
 ## 3. Setting up the External Trigger
 
 At this point you should have a recording setup that can be controlled using our AcquisitonTool and can stream video from all of your cameras. The last but very important step that is still missing is making sure all cameras record their videos perfectly in sync. To do this we use an external trigger pulse supplied by an [Arduino Uno](https://store.arduino.cc/products/arduino-uno-rev3) (or similar, our PlatformIO project supports many of the commonly used Microcontrollers).
-
-!!! warning "The current version of the AcquisitionTool still requires the old Arduino IDE based firmware"
-    You can download the firmware by clicking [here](https://github.com/JARVIS-MoCap/JARVIS-AcquisitionTool/files/9425690/Arduino_Trigger_Firmware.zip) and get the Arduino IDE by clicking [here](https://www.arduino.cc/en/software). Please disregard the next section for now (unless you are building the tool from source), we're currently in the process of switching over to the new version and will update this section as soon as possible.
 
 #### Programming the Arduino
 Programming the Arduino is really easy thanks to our PlatformIO install scripts for both Linux and Windows. Simply do the following:
