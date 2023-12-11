@@ -9,11 +9,12 @@ nav:
     - "3. Creating a new Trainingset": "getting_started/3_creating_trainingset.md"
   - "Manual":
     - "1. Introduction": "manual/1_introduction.md"
-    - "2. Designing a Setup": "manual/2_mocap_setup_design.md"
-    - "3. Setting up the AcquisitionTool": "manual/3_acquisitiontool_setup.md"
-    - "4. Recording Calibration Videos": "manual/4_recording_calibration.md"
-    - "5. Creating and Labeling Datasets": "manual/5_creating_and_labeling_datasts.md"
-    - "6. Training HybridNet": "manual/6_training_hybridnet.md"
+    - "2. Installation Guide": "manual/2_installation_guide.md"
+    - "3. Designing a Setup": "manual/3_mocap_setup_design.md"
+    - "4. Setting up the AcquisitionTool": "manual/4_acquisitiontool_setup.md"
+    - "5. Recording Calibration Videos": "manual/5_recording_calibration.md"
+    - "6. Creating and Labeling Datasets": "manual/6_creating_and_labeling_datasts.md"
+    - "7. Training HybridNet": "manual/7_training_hybridnet.md"
   - "Model Database": "model_database/model_database.md"
   - "Downloads": "downloads/downloads.md"
 
@@ -37,6 +38,7 @@ theme:
     - content.code.annotate
     - navigation.instant
     - navigation.tracking
+    - content.code.copy
   logo: assets/images/logo.png
   favicon: assets/images/logo_color.svg
 
@@ -59,8 +61,8 @@ markdown_extensions:
   - pymdownx.superfences
   - md_in_html
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 plugins:
   - glightbox:
