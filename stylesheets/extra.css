@@ -1,0 +1,117 @@
+:root > * {
+  --md-primary-fg-color:        #2064a4;
+  --md-primary-fg-color--light: #66b5ff;
+  --md-primary-fg-color--dark:  #00498e;
+
+  --md-accent-fg-color:                #64a420;
+  --md-accent-fg-color--transparent:   hsla(#64a420, 0.1);
+
+  --md-code-hl-color:                  hsla(#{hex2hsl($clr-yellow-a200)}, 0.5);
+  --md-code-hl-number-color:           hsla(0, 67%, 50%, 1);
+  --md-code-hl-special-color:          hsla(340, 83%, 47%, 1);
+  --md-code-hl-function-color:         hsla(291, 45%, 50%, 1);
+  --md-code-hl-constant-color:         #6f59d9;
+  --md-code-hl-keyword-color:          #2064a4;
+  --md-code-hl-string-color:           #64a420;
+  --md-code-hl-name-color:             var(--md-code-fg-color);
+  --md-code-hl-operator-color:         var(--md-default-fg-color--light);
+  --md-code-hl-punctuation-color:      var(--md-default-fg-color--light);
+  --md-code-hl-comment-color:          var(--md-default-fg-color--light);
+  --md-code-hl-generic-color:          var(--md-default-fg-color--light);
+  --md-code-hl-variable-color:         var(--md-default-fg-color--light);
+}
+
+.md-typeset h2 {
+  color: #64a420;
+}
+
+.md-typeset h3 {
+  color: #64a420;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-gap: 15px;
+}
+
+
+.frame {
+  border: 4px solid #63a31f;
+  padding: 10px 10px;
+  border-radius: 15px;
+}
+
+#info {
+  width: 100%;
+  background-color: #252734;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+#info tr:nth-child(even){background-color: #2b2d38;}
+
+#info tr:hover {background-color: #63a31f;}
+
+#info td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#info th {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #2064a4;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rounded {
+  border-radius: 15px;
+}
+
+.button {
+  border: none;
+  color: #fffffa;
+  padding: 5px 10px 5px 10px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: inline-block;
+  width: auto;
+  float: center;
+  width: 100%;
+  background-color: #63a31f;
+  align: center;
+}
+
+.button_green {
+  background-color: #63a31f;
+}
+
+.button_gray {
+  background-color: #8f8f8f;
+}
+
+.button_blue {
+  background-color: #2064a4ff;
+}
+
+.button_purple {
+  background-color: #6420a4;
+}
