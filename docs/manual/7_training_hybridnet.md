@@ -41,28 +41,33 @@ The first step after creating your project is training the different neural netw
 Training will take anywhere from a few minutes to a few hours, depending on your dataset size and hardware. The interface should display updating loss-curves that shoudl look similar to the image below.
 
 <center><img src="media/Training_Screenshot.png" alt="drawing" width="350"/></center>
+![Trainging Screnshot](../assets/images/manual/Training_Screenshot.png){: .center width="70%"}
 
-**Info**: Tensorboard logs are saved the 'logs' directory for every trainingrun, models are saved in the `models` directory.
+
+??? info "Tensorboard logs are saved the `logs` directory for every training run, models are saved in the `models` directory."
 
 ## Prediction
-The next step is to use your trained networks to predict the poses in one of your recordings. Select the `Prediction` tab and fill in the following details:
+The next step is to use your trained networks to predict the poses in one of your recordings. Select the <span style="color:#63a31f">Prediction</span> tab and fill in the following details:
 
-- `Path of recording directory` is the path of the recording you want to run prediction on.
+- <span style="color:#63a31f">Path of recording directory</span> is the path of the recording you want to run prediction on.
 
-- `Weights for CenterDetect / HybridNet` lets you specify which weights you want to use. If you have trained models yourself you can leave them at 'latest'. If you didn't train the network yourself you will have to put the path of the pretrained weights here. They can be found in the 'pretrained' directory inside your 'JARVIS-Hybridnet' folder.
+- <span style="color:#63a31f">Weights for CenterDetect / HybridNet</span> lets you specify which weights you want to use. If you have trained models yourself you can leave them at <span style="color:#63a31f">latest</span>. If you didn't train the network yourself you will have to put the path of the pretrained weights here. They can be found in the <span style="color:#63a31f">pretrained</span> directory inside your <span style="color:#63a31f">JARVIS-Hybridnet</span> folder.
 
-- `Start Frame & Number Frames` lets you select which part of the recording you want to run the prediction. For quick results set 'Number of Frames' to 1000. To predict until the end of the recording set it to -1.
+- <span style="color:#63a31f">Start Frame & Number Frames</span> lets you select which part of the recording you want to run the prediction. For quick results set 'Number of Frames' to 1000. To predict until the end of the recording set it to -1.
 
-Once you're done you can run the prediction by clicking the `Predict` button.\
-Once the process is finished you will find a directory with a current timestamp in the projects folder under `predictions`. That folder contains a 'data3D.csv' file that contains the 3D coordinates and their corresponding confidences for every point in time. The directory also contains a '.yaml' file that holds some information necessary for creating videos from your predictions.
+Once you're done you can run the prediction by clicking the <span style="color:#63a31f">Predict</span> button.\
+Once the process is finished you will find a directory with a current timestamp in the projects folder under <span style="color:#63a31f">predictions</span>. That folder contains a 'data3D.csv' file that contains the 3D coordinates and their corresponding confidences for every point in time. The directory also contains a <span style="color:#63a31f">.yaml</span> file that holds some information necessary for creating videos from your predictions.
 
-**Info**: The unit of the entries in the `data3D.csv` is **mm**, the reference coordinate frame is relative to your primary camera. The `confidence` column has a number between 0 and 1, where one presents max. confidence. This metric is pretty flawed, so use carfully.
+??? info "Dataset3D file format:"
+      - The unit of the entries in the `data3D.csv` is **mm**
+      - The reference coordinate frame is relative to your primary camera. 
+      - The `confidence` column has a number between 0 and 1, where one presents max. confidence. This metric is pretty flawed, so use carfully.
 
 ## Visualization
-Navigate to the `Visualization` tab. Here the correct prediction directory should already be selected. If you want you can remove or add cameras from the list of cameras for which you want to create annotated videos. You can now click `Create Video` as shown below. If everything is set correctly you should find a directory containing your freshly labeled videos in the project directory after the progress bar is filled up.
+Navigate to the <span style="color:#63a31f">Visualization</span> tab. Here the correct prediction directory should already be selected. If you want you can remove or add cameras from the list of cameras for which you want to create annotated videos. You can now click <span style="color:#63a31f">Create Video</span> as shown below. If everything is set correctly you should find a directory containing your freshly labeled videos in the project directory after the progress bar is filled up.
 
 ## Analysis
-If you want to compare the quality of different training runs in more detail the functions inside the `Analysis` tab are very helpfull.
+If you want to compare the quality of different training runs in more detail the functions inside the <span style="color:#63a31f">Analysis</span> tab are very helpfull.
 
 
 ## Setting the config parameters
